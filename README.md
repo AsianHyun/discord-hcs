@@ -7,13 +7,8 @@ issue는 여셔도 상관없지만,
 
 ## Dependencies
 ⦁ aiohttp
-
 ⦁ pycord
-
 ⦁ dotenv
-
 ⦁ hcskr
-
 ⦁ json
-
 ⦁ os
