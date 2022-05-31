@@ -11,7 +11,7 @@ bot = discord.Bot(intents = discord.Intents.all())
 async def on_ready():
     print("I'm on ready! ✔️")
 
-@bot.slash_command(description="auto-HCS에 정보를 등록합니다.")
+@bot.slash_command(description="HCS-BOT에 정보를 등록합니다.")
 async def 등록(ctx, 이름: discord.Option(str, "이름 입력하기"), 
                     생년월일: discord.Option(str, "생일 입력하기"),
                     지역: discord.Option(str, "지역 입력하기"),
@@ -44,7 +44,7 @@ async def 등록(ctx, 이름: discord.Option(str, "이름 입력하기"),
 
     await original_message.edit_original_message(content="가입 완료!")
 
-@bot.slash_command(description="auto-HCS를 통해 자가진단을 실행합니다.")
+@bot.slash_command(description="HCS-BOT를 통해 자가진단을 실행합니다.")
 async def 자가진단(ctx, 신속항원검사: discord.Option(str, "검사키트 검사결과를 선택합니다.", choices=["음성 (Negative)", "양성 (Positive)"])):
     original_message = await ctx.respond("잠시만 기다려주세요...")
 
